@@ -110,7 +110,7 @@ const bookAppointment = (id , name , fee , department)=>{
 (async function() {
 
 try {
-    const doctor_details = await fetch("https://sq2pv0dj-8085.inc1.devtunnels.ms/api/v1/search/topthreedoctors")
+    const doctor_details = await fetch("http://13.201.107.9/api/v1/search/topthreedoctors")
     .then(data => data.json())
 
 topthreedoctors(doctor_details.data)
