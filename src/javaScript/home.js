@@ -42,7 +42,7 @@ const doctorListDiv = document.getElementById('seaarch_result');
         )
         profile.setAttribute(
             "onclick",
-            `window.location.href = "http://127.0.0.1:5501/public/doctorProfile.html?id=${doctor._id}"`
+            `window.location.href = "http://13.201.107.9/public/doctorProfile.html?id=${doctor._id}"`
         )
         
         const doctorImage = document.createElement('img');
@@ -101,7 +101,7 @@ const topthreedoctors = (data)=>{
 
 const bookAppointment = (id , name , fee , department)=>{
     
-    window.location.href = `http://127.0.0.1:5501/public/appointmentForm.html?id=${encodeURIComponent(id)}&doctorName=${name}&fee=${fee}&department=${department}`
+    window.location.href = `http://13.201.107.9/public/appointmentForm.html?id=${encodeURIComponent(id)}&doctorName=${name}&fee=${fee}&department=${department}`
     
 }
 
@@ -126,7 +126,7 @@ topthreedoctors(doctor_details.data)
 
 
 search.addEventListener("input" , async()=>{
-    await fetch(`http://localhost:8085/api/v1/search/?collect=${search.value.toLowerCase()}`)
+    await fetch(`http://13.201.107.9/api/v1/search/?collect=${search.value.toLowerCase()}`)
     .then(data => {
             return data.json()
         })
