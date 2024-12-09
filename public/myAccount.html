@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,600,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/head_footor.css">
+    <link rel="stylesheet" href="/src/css/myAccount.css">
+    <link rel="stylesheet" href="/src/css/login_singup.css">
+    <link rel="stylesheet" href="/src/css/messagess.css">
+    <link rel="stylesheet" href="/src/css/onlyDesktop.css">
+    <link rel="stylesheet" href="/src/css/loding_spin.css">
+    <title>My Account</title>
+</head>
+<body>
+    <div class="mobile-warning">
+        <p>This site is optimized for desktop devices. Please visit on a larger screen.</p>
+      </div>
+    <div class="desktop-only">
+        <div class="loading"><div class="loading-circle" id="spinner"></div></div>
+    <div class="login_singup_form_hiden" id="login_singup_form">
+        <div class="login_singup">
+            <span class="material-symbols-outlined" id="login_singup_close" style="font-weight: 400;">
+                disabled_by_default
+                </span>
+            <ul class="tab-group">
+              <li class="tab register"><a href="#signup" class="form_a_tag">Sign Up</a></li>
+              <li class="tab logIn"><a href="#login" class="form_a_tag">Log In</a></li>
+            </ul>
+            
+            <div class="tab-content">
+                <div id="signup">   
+                    <h1>Sign Up for Free</h1>
+                    
+                    <form id="signupForm">
+                        <div class="field-wrap">
+                          <label>
+                            Email Address<span class="req">*</span>
+                          </label>
+                          <input type="email" name="emial" autocomplete="off"  />
+                        </div>
+                      <div class="field-wrap">
+                        <label>
+                          Phone Number<span class="req">*</span>
+                        </label>
+                        <input type="number" name="phoneNumber" autocomplete="off"  />
+                      </div>
+                  
+                      
+                      <div class="field-wrap">
+                        <label>
+                          Set A Password<span class="req">*</span>
+                        </label>
+                        <input type="password" name="password" autocomplete="off"  />
+                      </div>
+                      
+                      <button type="submit" class="button button-block">Register</button>
+                    </form>
+                  </div>
+                  
+              
+              <div id="login">   
+                <h1>Welcome Back!</h1>
+                
+                <form id="loginForm">
+                
+                  <div class="field-wrap">
+                  <label>
+                    Email Address<span class="req">*</span>
+                  </label>
+                  <input type="email" name="emial" autocomplete="off"/>
+                </div>
+                
+                <div class="field-wrap">
+                  <label>
+                    Password<span class="req">*</span>
+                  </label>
+                  <input type="password" name="password" autocomplete="off"/>
+                </div>
+                
+                <p class="forgot"><a href="#" class="form_a_tag">Forgot Password?</a></p>
+                
+                <button class="button button-block"/>Log In</button>
+                
+                </form>
+        
+              </div>
+              
+            </div><!-- tab-content -->
+            
+        </div>
+    </div>
+  
+      <div class="overlay" id="alertOverlay">
+        <!-- The Alert Box -->
+        <div class="alert-box">
+          <!-- Circle with dynamic icon inside -->
+          <div class="alert-logo" id="alertLogo">✓</div>
+      
+          <!-- Dynamic Message -->
+          <div class="alert-message" id="alertMessage">Something went wrong! Please try again.</div>
+      
+          <!-- OK Button -->
+          <button class="alert-button" id="alert_button">OK</button>
+        </div>
+      </div>
+    <header id="head">
+        <div id="logo">
+            <img src="../assets/healthcare-high-resolution-logo-transparent.png" alt="Logo">
+        </div>
+        <div class="options">
+            <div class="home">Home</div>
+            <div class="about">About</div>
+            <div class="services">Services</div>
+            <div class="account">My Account</div>
+            <div class="history">History</div>
+            <div id="logIn">Login</div>
+            <div id="register">Register</div>
+            <div style="display: none;" id="logOut">Log Out</div>
+        </div>
+        <div class="profile" id="profile_logo">
+            <img src="https://res.cloudinary.com/dr3opwg7s/image/upload/v1733585563/account_circle_24dp_5F6368_FILL0_wght400_GRAD0_opsz24_moucnt.svg" alt="">
+        </div>
+    </header>
+
+    <section class="profile_account">
+        <div class="profile_and_options">
+            <div class="account_profile">
+                <label for="avatar"  class="avatar">
+                    <img src="" alt="profile" class="avatar">
+                </label>
+                <input type="file" name="avatar" id="avatar" style="display: none;">
+                <p class="userName"></p>
+            </div>
+        </div>
+        <div class="account_details">
+            <div class="account_info">
+                <div class="title">
+                    <h1>Account</h1>
+                    <h2 class="userName"></h2>
+                </div>
+                <div class="outher_text">
+                    <p>View and edit your personal info below.</p>
+                </div>
+            </div>
+            <div class="profile_update">
+                <div class="title">
+                    <h3>Personal Info</h3>
+                    <p>Update your personal informataion.</p>
+                </div>
+                <form class="user_form">
+                    <div class="user_name">
+                        <label for="first_name">First Name:</label>
+                        <label for="last_name">Last Name</label>
+                        <input type="text" name="" id="userName" class="userName">
+                        <input type="text" name="" id="last_name" disabled>
+                    </div>
+                    <div class="phone_number">
+                        <label for="number">Number</label>
+                        <input type="number" name="" id="number" class="phone">
+                    </div>
+                
+            </div>
+            <div class="userNmae_pass">
+                <div class="userID_pass">
+                    <div class="title">
+                        <h3>Login Info</h3>
+                        <p>view and update your login email and password.</p>
+                    </div>
+                    <div class="user_id">
+                        <label for="ID">Email ID:</label>
+                        <input type="email" name="" id="ID" class="email" >
+                    </div>
+                    <div class="user_pass">
+                        <label for="old_password">Old Password:</label>
+                        <label for="new_password">New Password:</label>
+                        <input type="password" name="" id="old_password" class="oldPassword">
+                        <input type="password" name="" id="new_password" class="newPassword">
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <button type="submit">Update Profile</button>
+            </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="getInTouch">
+            <div class="heading">
+                <h1>Get In Touch</h1>
+            </div>
+            <div class="address">
+                <p>500 Terry Francice st.</p>
+                <p> san francico , CA 94158</p>
+            </div>
+            <div class="contact">
+                <p>123-8512 2546 445</p>
+                <p>info@heakthcare@gmail.com</p>
+            </div>
+        </div>
+        <div class="helpForm">
+            <form action="" method="post">
+                <div class="user_name">
+                    <label for="first_name">First Name</label>
+                    <label for="last_name">Last Name</label>
+                    <input type="text" name="first_name" >
+                    <input type="text" name="last_name" >
+                </div>
+                <div class="user_email">
+                    <label for="email">Email</label>
+                    <input type="email" name="">
+                </div>
+                <div class="user_message">
+                    <label for="message">Meassage</label>
+                    <textarea name="message" id="" style="height: 60px;"></textarea>
+                </div>
+                <div class="upload_file_submit">
+                        <label for="upload_file">upload</label>
+                        <input type="file" name="" id="upload_file">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </footer>
+</div>
+<script src="/src/javaScript/cookie_check.js"></script>
+<script src="/src/javaScript/headFooter.js"></script>
+<script src="/src/javaScript/cookie_check.js"></script>
+<script src="/src/javaScript/login_singup.js"></script>
+<script src="/src/javaScript/alertmessage.js"></script>
+<script src="/src/javaScript/account.js"></script>
+</body>
+</html>

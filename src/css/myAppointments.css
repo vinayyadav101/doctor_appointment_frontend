@@ -1,0 +1,60 @@
+.myappointments{
+    margin: 2% 5% 2% 5%;
+    padding: 0% 2% 2% 2%;
+}
+
+/* head css */
+.head{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10%;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+}
+.head > div {
+    padding: 2%;
+}
+.head > div:hover{
+    background-color: #c9c9cc;
+}
+
+/* upcoming css */
+
+.upcoming{
+    margin-top: 0px;
+}
+.hadding{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    background-color: #62646473;
+    border: 1px solid black;
+}
+.hadding>div{
+    padding: 2%;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    border-right: 2px solid black;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.upcoming_data{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    border: 1px solid black;
+}
+.upcoming_data > div{
+    display: grid;
+    align-items: center;
+    padding: 2%;
+    text-align: center;
+    border-right: 2px solid black;
+}
+.downlaod_option{
+    color: blue;
+}
+.downlaod_option:hover{
+    cursor: pointer;
+}

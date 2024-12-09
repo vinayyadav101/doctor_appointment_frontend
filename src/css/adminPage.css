@@ -1,0 +1,507 @@
+/* body baground color */
+
+
+body{
+    background-color: #D8EFED;
+}
+
+
+/* main containaer */
+
+.mainContainer{
+    display: grid;
+    height: 600px;
+    margin-top: 0.5%;
+    grid-template-columns: 1fr 6fr;
+}
+
+/* admin Options */
+
+.adminOptions{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 8px -2px;
+}
+.adminOptions > div {
+    border-bottom: 1px solid black;
+    font-size: large;
+    padding: 2% 3%;
+    margin: 3% 0;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 0;
+}
+
+.adminOptions > div:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.adminOptions > div:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #a0cfdb;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+.adminOptions > div:hover {
+    color: #fff;
+}
+
+.adminOptions > div:hover:before {
+    width: 100%;
+}
+/* adminoptions  end */
+/* second container all css */
+
+.secondContainer{
+    display: grid;
+    justify-items: center;
+} 
+
+/* dashboard */
+.deshboard{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    justify-content: center;
+    height: 100%;
+
+}
+/* top div css */
+.dataInNumber{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    gap: 2%;
+    margin: 2.5% 0 2.5% 0;
+}
+.dataInNumber > div {
+    background-color: white;
+    width: 85%;
+    height: 80%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    padding: 3%;
+    display: grid;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+
+}
+/* bottom div css */
+
+.dataInGraph{
+    display: grid;
+    gap: 1%;
+    padding: 1%;
+    grid-template-columns: 3fr 2fr;
+}
+.paymentGraph ,
+.appointmentGraph{
+    display: grid;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    padding: 0.8%;
+}
+/* dashbord css end */
+
+ /* doctor registration form */
+ .form-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px; 
+     min-width: 400px;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #218838;
+}
+
+.full-width {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* regitraion form end */
+
+/* payments history and all payment details */
+
+.payment-dashboard {
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+
+.payment-dashboard h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    gap: 2%;
+    margin: 2.5% 0 2.5% 0;
+}
+
+.stat-card {
+    background-color: white;
+    width: 85%;
+    height: 80%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    padding: 3%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.stat-value {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.content-container {
+    display: grid;
+    gap: 20px;
+    background-color: white;
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+
+.payment-history {
+    flex: 1;
+    padding: 15px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.search-bar {
+    position: static;
+    top: 0;
+    padding: 10px;
+    z-index: 1;
+}
+
+.search-bar input {
+    width: 97%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.history-table-wrapper {
+    max-height: 350px;
+    overflow-y: auto;
+    position: relative;
+}
+
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.history-table th, .history-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.history-table th {
+    background-color: #f1f1f1;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.history-table tr:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.no-data {
+    text-align: center;
+    padding: 20px;
+    color: #999;
+}
+/* payment dahboard end */
+
+/* appointment history css*/
+
+.appointment-dashboard{
+    width: 95%;
+    display: grid;
+    grid-template-rows: 2fr 5fr;
+}
+.appointment-top-container{
+    padding: 1% 0 1% 0;
+    display: grid;
+    gap: 2%;
+    grid-template-columns: 3fr 1fr;
+}
+.chart-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2%;
+}
+.chart-container > div{
+    width: 100%;
+}
+.chart-data-container{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    gap: 2%;
+}
+.paymentGraph-appointment{
+    display: grid;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    padding: 0.6%;
+}
+.appointment-stat-card{
+    background-color: white;
+    margin: 5%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.dataInNumber div span {
+    font-size: 50px;
+    margin-left: 5%;
+
+}
+.appointment-stat-card div span{
+    font-size: 30px;
+    margin-left: 2%;
+}
+
+/* result bar css */
+.result-bar {
+    display: grid;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    grid-template-columns: 50% auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    /* margin-top: 20px; */
+    width: 100%;
+    max-width: 700px;
+    z-index: 1002;
+    /* margin: 10px auto; */
+  }
+
+  .result-item {
+    margin: 10px;
+  }
+
+  .label {
+    font-weight: bold;
+    color: #333;
+  }
+
+  .value {
+    width: 57%;
+    display: block;
+    color: #555;
+    margin-top: 4px;
+    word-wrap: break-word; /* Wraps long text for smaller widths */
+  }
+
+  .button-container {
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .refund-button, .cancel-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+  }
+
+  .refund-button {
+    background-color: #e74c3c;
+  }
+
+  .refund-button:hover {
+    background-color: #c0392b;
+  }
+
+  .cancel-button {
+    background-color: #3498db;
+  }
+
+  .cancel-button:hover {
+    background-color: #2980b9;
+  }
+
+  /* doctor section css */
+  /* this css also apply for users dashboard so find required css propertiys */
+.doctor-dashboard{
+    padding: 16px;
+    width: 100%;
+}
+.doctor-details-dashboard {
+    max-height: 500px;
+    overflow-y: scroll;
+    padding: 16px;
+}
+#delete-doctor-btn ,
+#delete-user-btn{
+    padding: 12px 24px;
+    font-size: 1.1em;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #delete-doctor-btn:hover,
+  #delete-user-btn:hover {
+    background-color: #388e3c;
+  }
+  .delete-doctor{
+    margin-bottom: 10px;
+  }
+
+  .profile-container {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    
+  }
+  .doctor-info {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .doctor-photo-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .doctor-photo {
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border: 3px solid #4CAF50;
+  }
+  
+  .doctor-details {
+    flex: 2;
+    padding-left: 20px;
+  }
+  
+  .specialty {
+    font-size: 1.2em;
+    color: #4CAF50;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .additional-info section {
+    margin-bottom: 20px;
+  }
+  
+  .review-panel {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+  }
+  
+
+.review-panel .history-table-wrapper{
+    max-height: 200px;
+}

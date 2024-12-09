@@ -1,0 +1,181 @@
+.login_singup *,
+.login_singup *:before,
+.login_singup *:after {
+box-sizing: border-box;
+}
+
+.form_a_tag{
+text-decoration: none;
+color: #1ab188;
+transition: 0.5s ease;
+}
+.form_a_tag:hover {
+color: #179b77;
+}
+
+.login_singup_form_hiden {
+display: none;
+}
+.login_singup_form{
+backdrop-filter: blur(10px);
+position: fixed;
+display: block;
+top: 0;
+bottom: 0;
+height: 100%;
+width: 100%;
+z-index: 1001;
+}
+
+.login_singup {
+position: relative;
+box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+background: rgba(19, 35, 47, 0.9);
+padding: 40px;
+border-radius: 4px;
+max-width: 600px;
+margin: 40px auto;
+}
+.login_singup > span {
+position: absolute;
+top: 0;
+right: 0;
+color: white;
+cursor: pointer;
+}
+
+.tab-group {
+list-style: none;
+padding: 0;
+margin: 0 0 40px 0;
+}
+.tab-group:after {
+content: "";
+display: table;
+clear: both;
+}
+.tab-group > li > a {
+display: block;
+text-decoration: none;
+padding: 15px;
+background: rgba(160, 179, 176, 0.25);
+color: #a0b3b0;
+font-size: 20px;
+float: left;
+width: 50%;
+text-align: center;
+cursor: pointer;
+transition: 0.5s ease;
+}
+.tab-group > li > a:hover {
+background: #179b77;
+color: #ffffff;
+}
+.tab-group > .active > a {
+background: #1ab188;
+color: #ffffff;
+}
+
+.tab-content > div:last-child {
+display: none;
+}
+
+.login_singup h1{
+text-align: center;
+color: #ffffff;
+font-weight: 300;
+margin: 0 0 40px;
+}
+
+.field-wrap >label {
+position: absolute;
+transform: translateY(6px);
+left: 13px;
+color: rgba(255, 255, 255, 0.5);
+transition: all 0.25s ease;
+pointer-events: none;
+font-size: 22px;
+}
+.field-wrap > label > .req {
+margin: 2px;
+color: #1ab188;
+}
+
+.field-wrap > label.active {
+transform: translateY(50px);
+left: 2px;
+font-size: 14px;
+}
+.field-wrap > label.active > .req {
+opacity: 0;
+}
+
+.field-wrap > label.highlight {
+color: #ffffff;
+}
+
+.field-wrap> input,
+.field-wrap >textarea {
+font-size: 22px;
+display: block;
+width: 100%;
+height: 100%;
+padding: 5px 10px;
+background: none;
+background-image: none;
+border: 1px solid #a0b3b0;
+color: #ffffff;
+border-radius: 0;
+transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.field-wrap > input:focus,
+.field-wrap > textarea:focus {
+outline: 0;
+border-color: #1ab188;
+}
+
+.field-wrap > textarea {
+border: 2px solid #a0b3b0;
+resize: vertical;
+}
+
+.field-wrap {
+position: relative;
+margin-bottom: 40px;
+}
+
+
+.login_singup .button {
+border: 0;
+outline: none;
+border-radius: 0;
+padding: 15px 0;
+font-size: 2rem;
+font-weight: 600;
+text-transform: uppercase;
+letter-spacing: 0.1em;
+background: #1ab188;
+color: #ffffff;
+transition: all 0.5s ease;
+cursor: pointer;
+}
+#loginForm > .button:hover,
+#signupForm > .button:hover{
+background: #179b77;
+}
+
+#loginForm > .button:focus ,
+#signupForm > .button:focus {
+background: #179b77;
+}
+
+.login_singup .button-block{
+display: block;
+width: 100%;
+}
+
+#loginForm > .forgot,
+#signupForm > .forgot {
+margin-top: -20px;
+text-align: right;
+}

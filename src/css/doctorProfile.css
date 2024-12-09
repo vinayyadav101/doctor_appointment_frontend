@@ -1,0 +1,153 @@
+.book-appointment {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  #book-appointment-btn {
+    padding: 12px 24px;
+    font-size: 1.1em;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #book-appointment-btn:hover {
+    background-color: #388e3c;
+  }
+  /* Styling for the rating stars */
+  .rating {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #ccc;
+  }
+  
+  .rating .star:hover,
+  .rating .star.selected {
+    color: #f4c542;
+  }
+  
+  .stars {
+    color: #f4c542;
+  }
+
+  .profile-container {
+    max-width: 800px;
+    width: 100%;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    
+  }
+  .doctor-info {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .doctor-photo-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .doctor-photo {
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border: 3px solid #4CAF50;
+  }
+  
+  .doctor-details {
+    flex: 2;
+    padding-left: 20px;
+  }
+  
+  .specialty {
+    font-size: 1.2em;
+    color: #4CAF50;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .additional-info section {
+    margin-bottom: 20px;
+  }
+  
+  .review-panel {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+  }
+  
+  #reviews {
+    margin-bottom: 20px;
+  }
+  
+  .review {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    margin-bottom: 10px;
+  }
+  
+  .review h4 {
+    margin: 0;
+    font-size: 1.1em;
+    color: #333;
+  }
+  
+  .review p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  #review-form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+  }
+  
+  #review-form >input, #review-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  #review-form > button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #review-form > button:hover {
+    background-color: #388e3c;
+  }
+  .doctor_profile{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafc;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  }

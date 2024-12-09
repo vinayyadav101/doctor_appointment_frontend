@@ -1,0 +1,143 @@
+
+/* first step of section css */
+.profile_account{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 2% 3% 2% 3%;
+}
+
+/* profile section */
+.profile_and_options{
+    padding: 5% 10% 5% 10%;
+}
+.account_profile{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 10%;
+    text-align: center;
+}
+.account_profile  img {
+    margin-top: 15%;
+    width: 70%;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.account_profile > p {
+    margin-top: 1%;
+    padding-bottom: 10%;
+}
+
+/* details sections */
+
+/* account info tab */
+.account_details{
+    padding: 5% 10% 5% 10%;
+}
+.account_info{
+    border-bottom: 1px solid #0000005d;
+    
+}
+.title{
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    justify-content: center;
+    align-items: center;
+    margin: 0% 1% 0 1%;
+    padding-top: 1%;
+}
+.title > h1{
+    font-size: 45px;
+    margin: 0px;
+}
+.title > h2{
+    text-align: right;
+    font-size: 30px;
+    margin: 0px;
+}
+.outher_text > p{
+    margin-top: 1%;
+    margin-left: 1%;
+    padding-bottom: 2%;
+}
+
+/* profile update tab */
+.profile_update{
+    border-bottom: 1px solid #0000005d;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    padding-bottom: 4%;
+}
+.profile_update > .title {
+    display: inline;
+}
+.profile_update > .title > h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+.user_name{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.phone_number{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+}
+.phone_number > input{
+    height: 100%;
+    width: 43.8%;
+}
+.phone_number > input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* user id and password */
+
+.userID_pass{
+    margin-top: 1%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid #0000005d;
+}
+.userID_pass > .title {
+    display: inline;
+}
+.userID_pass > .title > h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+.user_id{
+    display: grid;
+    grid-template-rows:repeat(1,1fr) ;
+    padding-bottom: 2%;
+}
+.user_id > input {
+    height: 100%;
+    width: 43.8%;
+}
+.user_pass{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10%;
+}
+.user_pass > input{
+    height: 100%;
+}
+.button{
+    padding-top: 2%;
+}
+.button > button {
+    background-color: #E5EBFA;
+    color: #0069FF;
+    border: none;
+    font-size: 16px;
+    padding: 2% 4% 2% 4%;
+    border-radius: 60px;
+}
+.button > button:hover {
+    background-color: #689ADE;
+    color: #ffffff;
+    cursor: pointer;
+}

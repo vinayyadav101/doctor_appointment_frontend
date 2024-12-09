@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,600,0,0" />
+    <link rel="stylesheet" href="/src/css/head_footor.css">
+    <link rel="stylesheet" href="/src/css/myAppointments.css">
+    <link rel="stylesheet" href="/src/css/onlyDesktop.css">
+    <title>My Appointments</title>
+</head>
+<body>
+  
+  <div class="mobile-warning">
+    <p>This site is optimized for desktop devices. Please visit on a larger screen.</p>
+  </div>
+<div class="desktop-only">
+  <div class="login_singup_form_hiden" id="login_singup_form">
+    <div class="login_singup">
+        <span class="material-symbols-outlined" id="login_singup_close" style="font-weight: 400;">
+            disabled_by_default
+            </span>
+        <ul class="tab-group">
+          <li class="tab register"><a href="#signup" class="form_a_tag">Sign Up</a></li>
+          <li class="tab logIn"><a href="#login" class="form_a_tag">Log In</a></li>
+        </ul>
+        
+        <div class="tab-content">
+            <div id="signup">   
+                <h1>Sign Up for Free</h1>
+                
+                <form id="signupForm">
+                    <div class="field-wrap">
+                      <label>
+                        Email Address<span class="req">*</span>
+                      </label>
+                      <input type="email" name="emial" autocomplete="off"  />
+                    </div>
+                  <div class="field-wrap">
+                    <label>
+                      Phone Number<span class="req">*</span>
+                    </label>
+                    <input type="number" name="phoneNumber" autocomplete="off"  />
+                  </div>
+              
+                  
+                  <div class="field-wrap">
+                    <label>
+                      Set A Password<span class="req">*</span>
+                    </label>
+                    <input type="password" name="password" autocomplete="off"  />
+                  </div>
+                  
+                  <button type="submit" class="button button-block">Register</button>
+                </form>
+              </div>
+              
+          
+          <div id="login">   
+            <h1>Welcome Back!</h1>
+            
+            <form id="loginForm">
+            
+              <div class="field-wrap">
+              <label>
+                Email Address<span class="req">*</span>
+              </label>
+              <input type="email" name="emial" autocomplete="off"/>
+            </div>
+            
+            <div class="field-wrap">
+              <label>
+                Password<span class="req">*</span>
+              </label>
+              <input type="password" name="password" autocomplete="off"/>
+            </div>
+            
+            <p class="forgot"><a href="#" class="form_a_tag">Forgot Password?</a></p>
+            
+            <button class="button button-block"/>Log In</button>
+            
+            </form>
+    
+          </div>
+          
+        </div><!-- tab-content -->
+        
+    </div>
+</div>
+
+  <div class="overlay" id="alertOverlay">
+    <!-- The Alert Box -->
+    <div class="alert-box">
+      <!-- Circle with dynamic icon inside -->
+      <div class="alert-logo" id="alertLogo">✓</div>
+  
+      <!-- Dynamic Message -->
+      <div class="alert-message" id="alertMessage">Something went wrong! Please try again.</div>
+  
+      <!-- OK Button -->
+      <button class="alert-button" id="alert_button">OK</button>
+    </div>
+  </div>
+    <header id="head">
+        <div id="logo">
+            <img src="healthcare-high-resolution-logo-transparent.png" alt="Logo">
+        </div>
+        <div class="options">
+          <div class="home">Home</div>
+          <div class="about">About</div>
+          <div class="services">Services</div>
+          <div class="account">My Account</div>
+          <div class="history">History</div>
+          <div id="logIn">Login</div>
+          <div id="register">Register</div>
+          <div style="display: none;" id="logOut">Log Out</div>
+      </div>
+      <div class="profile" id="profile_logo">
+        <img src="https://res.cloudinary.com/dr3opwg7s/image/upload/v1733585563/account_circle_24dp_5F6368_FILL0_wght400_GRAD0_opsz24_moucnt.svg" alt="">
+    </div>
+    </header>
+
+    <section class="myappointments">
+        <div class="head">
+            <div>upcoming</div>
+            <div>past</div>
+        </div>
+        <div class="upcoming">
+            <div class="hadding">
+                <div>Doctor Name</div>
+                <div>Department</div>
+                <div>Booking Date & Time</div>
+                <div>Order ID</div>
+                <div>Residual</div>
+                <div>Status</div>
+                <div>PDF</div>
+            </div>
+            <div class="upcoming_data">
+                <div>Dr.vinay yadav</div>
+                <div>Cardiology</div>
+                <div>October 15, 2024, 10:30 AM</div>
+                <div>123456789</div>
+                <div>October 15, 2024, 10:30 AM</div>
+                <div>Confirmed</div>
+                <div class="downlaod_option">Download PDF</div>
+            </div>
+        </div>
+        <div class="past"></div>
+    </section>
+
+    <footer>
+        <div class="getInTouch">
+            <div class="heading">
+                <h1>Get In Touch</h1>
+            </div>
+            <div class="address">
+                <p>500 Terry Francice st.</p>
+                <p> san francico , CA 94158</p>
+            </div>
+            <div class="contact">
+                <p>123-8512 2546 445</p>
+                <p>info@heakthcare@gmail.com</p>
+            </div>
+        </div>
+        <div class="helpForm">
+            <form action="" method="post">
+                <div class="user_name">
+                    <label for="first_name">First Name</label>
+                    <label for="last_name">Last Name</label>
+                    <input type="text" name="first_name" id="">
+                    <input type="text" name="last_name" id="">
+                </div>
+                <div class="user_email">
+                    <label for="email">Email</label>
+                    <input type="email" name="" id="">
+                </div>
+                <div class="user_message">
+                    <label for="message">Meassage</label>
+                    <textarea name="message" id="" style="height: 60px;"></textarea>
+                </div>
+                <div class="upload_file_submit">
+                        <label for="upload_file">upload</label>
+                        <input type="file" name="" id="upload_file">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </footer>
+</div>
+<script src="/src/javaScript/alertmessage.js.js"></script>
+<script src="/src/javaScript/cookie_check.js"></script>
+<script src="/src/javaScript/headFooter.js"></script>
+<script src="/src/javaScript/login_singup.js.js"></script>
+
+</body>
+</html>

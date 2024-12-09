@@ -1,0 +1,79 @@
+.appointment_form{
+    margin: 2% 5% 2% 5%;
+    padding: 0% 2% 2% 2%;
+    }
+.appointment_form_heading{
+    font-weight: 500;
+    font-size: 25px;
+    padding-bottom: 0%;
+    margin-bottom: 0px;
+    padding-left: 1%;
+    background-color: darkgray;
+}
+.appointment_form > p ,
+.user_tearm{
+    padding-bottom: 2%;
+    padding-left: 1%;
+    font-weight: 300;
+    margin-top: 0%;
+    background-color: darkgray;
+}
+.doctorDetails,
+.user_datils{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 1% 0 2% 0;
+    border-bottom: 1px solid black;
+}
+.doctorDetails > p ,
+.user_datils > label,
+.user_datils>input,
+.user_datils>button{
+    padding: 1% 0 1% 1%;
+    margin: 0px;
+    width: 70%;
+}
+.abilable_time{
+    padding: 1% 0 1% 1%;
+    margin: 0px;
+    width: 70%;
+}
+.user_phone_number {
+    height: 30%;
+}
+.user_phone_number.toggle-height {
+    height: 5%;
+}
+
+.doctorDetails > div > p , 
+.doctorDetails>div > span > p{
+    margin: 0px;
+}
+
+.doctor_name ,
+.department ,
+.consultancy_fee {
+    border: 1px solid black;
+}
+.doctor_name:hover ,
+.department:hover ,
+.consultancy_fee:hover {
+    cursor: not-allowed;
+}
+.consultancy_fee{
+    padding: 1% 0 1% 1%;
+    width: 70%;
+}
+.user_datils > button {
+    border: none;
+    background-color: #E5EBFA;
+    color: #0069FF;
+    font-size: 20px;
+}
+.user_datils > button:hover{
+    background-color: #689ADE;
+    color: #ffffff;
+    cursor: default;    
+}
+
+

@@ -1,0 +1,56 @@
+
+.appointment_history {
+    border: 1px solid #ddd;
+    margin: 20px;
+  }
+
+  /* Inner container with scrolling */
+  .table-container {
+    max-height: 540px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+  }
+  .table-container::-webkit-scrollbar{
+  display: none;
+}
+
+  .appointment-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .appointment-table th {
+    padding: 10px 8px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    text-align: center;
+  }
+  .appointment-table td {
+    padding: 10px 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+
+
+  .appointment-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  .prescription-link { color: blue; text-decoration: underline; }
+  .button {
+    background-color: #E5EBFA;
+    color: #0069FF;
+    border: none;
+    font-size: 16px;
+    padding: 2% 4% 2% 4%;
+}
+.button:hover{
+    background-color: #689ADE;
+    color: #ffffff;
+    cursor: pointer;
+}

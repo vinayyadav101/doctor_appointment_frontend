@@ -1,0 +1,97 @@
+.prescription_form{
+        max-width: 900px;
+        margin: 10px auto;
+        padding: 20px;
+        border: 1px solid #28a745;
+        background-color: #f0f8f4;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: #28a745;
+}
+.prescription_form_section {
+    margin-bottom: 15px;
+}
+.input-label {
+    display: inline-block;
+    font-weight: bold;
+    width: 100%;
+    color: #2e7d32;
+}
+.input-field, .textarea-field {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.textarea-field {
+    height: 50px;
+}
+.input-inline {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.input-inline div {
+    width: 30%;
+}
+.prescription_form_table_container {
+    margin-bottom: 10px;
+}
+.prescription_form_table_container table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+.prescription_form_table_container th {
+    background-color: #28a745;
+    text-align: center;
+    border: 1px solid #28a745;
+    color: #fff;
+    padding: 8px;
+}
+.prescription_form_table_container td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #28a745;
+}
+table input {
+    padding: 5px;
+}
+.center-text {
+    text-align: center;
+    color: #28a745;
+}
+.prescription_form_button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.prescription_form_button:hover {
+    background-color: #218838;
+}
+.input-field:focus {
+    border-color: #28a745;
+    outline: none;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.prescription_form_button_container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
