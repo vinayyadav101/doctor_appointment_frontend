@@ -26,7 +26,7 @@ function numberInsert(name = 'dashboard') {
 }
 (async function(){
     try {
-        const response = await(await fetch('http://localhost:8085/graph/v2/admin/AllDataInNumbers',{credentials:'include'})).json()
+        const response = await(await fetch('http://13.201.107.9/graph/v2/admin/AllDataInNumbers',{credentials:'include'})).json()
             if (response.code !==1) {
                 return showAlert('error','number data not get from server')
             }
@@ -50,7 +50,7 @@ async function doctorregistrationform(event){
         data[el.name] = el.value
     })
         try {
-            const response = await(await fetch('http://localhost:8085/api/v1/doctor/register',{
+            const response = await(await fetch('http://13.201.107.9/api/v1/doctor/register',{
                 credentials:'include',
                 method:'post',
                 headers:{'Content-Type':'application/json'},
@@ -74,7 +74,7 @@ async function doctorregistrationform(event){
 async function getGraphData(route) {
     
     try {
-        const response = await(await fetch(`http://localhost:8085/graph/v2/admin/${route}`,{credentials:'include'})).json()
+        const response = await(await fetch(`http://13.201.107.9/graph/v2/admin/${route}`,{credentials:'include'})).json()
 
         if (response.code !== 1) {
             return showAlert("error",response.msg)
@@ -346,7 +346,7 @@ function canculButton(){
 }
 async function deleteDoctor(id){
     try {
-        const response = await(await fetch(`http://localhost:8085/api/v2/admin/deletedoctor/${id}`,{
+        const response = await(await fetch(`http://13.201.107.9/api/v2/admin/deletedoctor/${id}`,{
             credentials:'include',
             method:'delete'
         })).json()
@@ -361,7 +361,7 @@ async function deleteDoctor(id){
 }
 async function deleteUser(id){
     try {
-        const response = await(await fetch(`http://localhost:8085/api/v2/admin/deleteuser/${id}`,{
+        const response = await(await fetch(`http://13.201.107.9/api/v2/admin/deleteuser/${id}`,{
             credentials:'include',
             method:'delete'
         })).json()
@@ -386,7 +386,7 @@ async function PaymentFindByID(event) {
             return showAlert('error','please enter valid id.')
         }
             try {
-                const response = await(await fetch(`http://localhost:8085/api/v1/payment/payment/pay_${id}`)).json()
+                const response = await(await fetch(`http://13.201.107.9/api/v1/payment/payment/pay_${id}`)).json()
 
                     if (response.code !== 1) {
                         return showAlert('error',response.msg)
@@ -426,7 +426,7 @@ async function appointmentFindByID(event) {
         }
         
             try {
-                const response = await(await fetch(`http://localhost:8085/api/v2/admin/appointment/${id}`)).json()
+                const response = await(await fetch(`http://13.201.107.9/api/v2/admin/appointment/${id}`)).json()
 
                     if (response.code !== 1) {
                         return showAlert('error',response.msg)
@@ -456,7 +456,7 @@ async function appointmentFindByID(event) {
 }
 async function getAllPayments(){
     try {
-        const response = await(await fetch('http://localhost:8085/api/v2/admin/payments',{credentials:'include'})).json()
+        const response = await(await fetch('http://13.201.107.9/api/v2/admin/payments',{credentials:'include'})).json()
 
         if (response.code === 0) {
             return showAlert('error',response.msg)
@@ -489,7 +489,7 @@ async function getAllPayments(){
 
 async function getAllAppointments(){
     try {
-        const response = await(await fetch('http://localhost:8085/api/v2/admin/appointments',{credentials:'include'})).json()
+        const response = await(await fetch('http://13.201.107.9/api/v2/admin/appointments',{credentials:'include'})).json()
 
         if (response.code === 0) {
             return showAlert('error',response.msg)
@@ -548,7 +548,7 @@ function openreviewDetails(el){
 async function getDoctorDetails(name) {
     
     try {
-        const respponse = await(await fetch(`http://localhost:8085/api/v1/search/admin/?collect=${name.toLowerCase()}`,{
+        const respponse = await(await fetch(`http://13.201.107.9/api/v1/search/admin/?collect=${name.toLowerCase()}`,{
             credentials:'include'
         })).json()
         
@@ -593,7 +593,7 @@ async function getDoctorDetails(name) {
 async function getUserDetails(email) {
     
     try {
-        const respponse = await(await fetch(`http://localhost:8085/api/v2/admin/user/${email.toLowerCase()}`,{
+        const respponse = await(await fetch(`http://13.201.107.9/api/v2/admin/user/${email.toLowerCase()}`,{
             credentials:'include'
         })).json()
         

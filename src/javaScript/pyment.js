@@ -21,7 +21,7 @@ export const paymentExicution = (data)=>{
         "handler":async function (response){
         // Call your verification API after successful payment
         try {
-            await fetch('http://localhost:8085/api/v1/payment/verifypayment', {
+            await fetch('http://13.201.107.9/api/v1/payment/verifypayment', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

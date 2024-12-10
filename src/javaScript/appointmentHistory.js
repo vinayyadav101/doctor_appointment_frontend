@@ -22,7 +22,7 @@ async function residual(residual , id){
     loading.style.display = "block"
     
     try {
-        const response = await(await fetch(`http://localhost:8085/api/v1/doctor/residual/${id}`,{
+        const response = await(await fetch(`http://13.201.107.9/api/v1/doctor/residual/${id}`,{
             method:'put',
             credentials:"include",
             headers:{"Content-Type":"application/json"},
@@ -45,7 +45,7 @@ async function residual(residual , id){
 } 
 async function getHistory() {
     try {
-        const response = await(await fetch("http://localhost:8085/api/v1/user/" , {
+        const response = await(await fetch("http://13.201.107.9/api/v1/user/" , {
             credentials:"include"
         })).json()
         
@@ -110,7 +110,7 @@ function renderAppointments(appointments) {
                             aTag.removeAttribute('download')
                             aTag.textContent = "Add Pescription"
                                 if (appointment.status !== "cancel") {
-                                    aTag.href = `http://127.0.0.1:5501/public/prescriptionForm.html?id=${appointment._id}&patientName=${appointment.patientName}`
+                                    aTag.href = `https://vinayyadav101.github.io/doctor_appointment_frontend/public/prescriptionForm.html?id=${appointment._id}&patientName=${appointment.patientName}`
                                 }else{
                                     aTag.style.pointerEvents = "none"
                                     aTag.style.cursor = "no-drop"

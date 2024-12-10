@@ -10,7 +10,7 @@ function login_singup_function(event){
 async function logout(e){
     
     try {
-        const response = await (await fetch('http://localhost:8085/api/v1/user/logout',{
+        const response = await (await fetch('http://13.201.107.9/api/v1/user/logout',{
             credentials:'include'
         })).json()
     
@@ -37,14 +37,14 @@ async function openPages(route){
 
 
     if (check !== 0) {
-        window.location = `http://127.0.0.1:5501/public/${route}.html`
+        window.location = `https://vinayyadav101.github.io/doctor_appointment_frontend/public/${route}.html`
         return
     }
     showAlert("error" , "user is not login!")
     return;
 }
 
-window.location = `http://127.0.0.1:5501/public/${route}.html`
+window.location = `https://vinayyadav101.github.io/doctor_appointment_frontend/public/${route}.html`
     
     
 }

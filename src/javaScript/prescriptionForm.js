@@ -17,7 +17,7 @@ if (urlparam.get("patientName")) {
             showAlert("error" , "Accsess denid!")
             return;
         }
-        const response = await(await fetch("http://localhost:8085/api/v1/user/profile" ,{
+        const response = await(await fetch("http://13.201.107.9/api/v1/user/profile" ,{
             credentials:'include'
         })).json()
 
@@ -64,7 +64,7 @@ async function uploadPdfOnServer(pdfBlob){
             
         try {
 
-            const response = await(await fetch(`http://localhost:8085/api/v1/doctor/sendprescription?id=${urlparam.get("id")}`, {
+            const response = await(await fetch(`http://13.201.107.9/api/v1/doctor/sendprescription?id=${urlparam.get("id")}`, {
                 method: 'put',
                 credentials: "include",
                 body: formData
@@ -73,7 +73,7 @@ async function uploadPdfOnServer(pdfBlob){
                 if (response.code !== 0) {
                     loading.style.display = "none"
                     showAlert("success" , response.msg)
-                    document.getElementById("alert_button").addEventListener("click",()=>window.location.href = 'http://127.0.0.1:5501/public/appointmentHistory.html')
+                    document.getElementById("alert_button").addEventListener("click",()=>window.location.href = 'https://vinayyadav101.github.io/doctor_appointment_frontend/public/appointmentHistory.html')
                     return;
                 }
 

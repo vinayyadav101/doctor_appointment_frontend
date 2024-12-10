@@ -76,7 +76,7 @@ function groupByDate(data) {
 
 const apiCall = async()=>{
     try {
-        const fetchedData = await (await fetch(`http://localhost:8085/api/v1/doctor/avilabletime/${urlparam.get("id")}`)).json()
+        const fetchedData = await (await fetch(`http://13.201.107.9/api/v1/doctor/avilabletime/${urlparam.get("id")}`)).json()
         if (fetchedData.data !== undefined) {
             return fetchedData.data
         }else{
@@ -172,7 +172,7 @@ form.addEventListener('submit',async(e)=>{
     }
     
     try {
-        const response = await (await fetch(`http://localhost:8085/api/v1/user/appointment/${urlparam.get("id")}`,{
+        const response = await (await fetch(`http://13.201.107.9/api/v1/user/appointment/${urlparam.get("id")}`,{
             method: "post",
             headers : {'Content-Type' : 'application/json'},
             body:JSON.stringify(data)
@@ -202,7 +202,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 (async function(){
-    const response = await (await fetch('http://localhost:8085/api/v1/user/profile' , {
+    const response = await (await fetch('http://13.201.107.9/api/v1/user/profile' , {
         method:'get',
         credentials:"include"
     })).json()

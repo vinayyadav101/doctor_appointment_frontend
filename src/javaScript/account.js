@@ -15,7 +15,7 @@ const data ={
 }
 async function getprofile(){
     try {
-        const response = await(await fetch("http://localhost:8085/api/v1/user/profile",{
+        const response = await(await fetch("http://13.201.107.9/api/v1/user/profile",{
             credentials:'include'
         })).json()
 
@@ -53,7 +53,7 @@ async function updateProfile(data){
 
       
         try {
-            const response = await(await fetch("http://localhost:8085/api/v1/user/updateprofile",{
+            const response = await(await fetch("http://13.201.107.9/api/v1/user/updateprofile",{
                 credentials:'include',
                 method:"PUT",
                 body:formData
@@ -77,7 +77,7 @@ async function updateProfile(data){
 
 async function changepassword() {
     try {
-        const response = await(await fetch("http://localhost:8085/api/v1/user/changepassword",{
+        const response = await(await fetch("http://13.201.107.9/api/v1/user/changepassword",{
             credentials:"include",
             method:"put",
             headers:{"Content-Type":"application/json"},

@@ -5,7 +5,7 @@ async function checkCookie(){
     const options = document.querySelector('.options')
     const logOut = document.getElementById('logOut')
     try {
-        const check_cookie = await (await fetch('http://localhost:8085/api/v1/user/cookie_check' , {
+        const check_cookie = await (await fetch('http://13.201.107.9/api/v1/user/cookie_check' , {
             method:'get',
             credentials:'include'
         })).json()

@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 (async function(){
     try {
-        const response = await(await fetch(`http://localhost:8085/api/v1/search/?id=${urlparam.get("id")}`)).json()
+        const response = await(await fetch(`http://13.201.107.9/api/v1/search/?id=${urlparam.get("id")}`)).json()
                        
         for (const key in response.data) {
             
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
         if (response.code === 1) {
             document.getElementById("book-appointment-btn").addEventListener('click' , ()=>{
-                window.location.href = `http://127.0.0.1:5501/public/appointmentForm.html?id=${response.data._id}&doctorName=${response.data.doctorName}&fee=${response.data.consultaionFee}&department=${response.data.specialty}`
+                window.location.href = `https://vinayyadav101.github.io/doctor_appointment_frontend/public/appointmentForm.html?id=${response.data._id}&doctorName=${response.data.doctorName}&fee=${response.data.consultaionFee}&department=${response.data.specialty}`
             })
             
         }
@@ -74,7 +74,7 @@ form.addEventListener("submit" , async (e)=>{
         review : document.getElementById("review-text").value
     }
 
-        const response = await (await fetch(`http://localhost:8085/api/v1/user/review/${urlparam.get("id")}`,{
+        const response = await (await fetch(`http://13.201.107.9/api/v1/user/review/${urlparam.get("id")}`,{
             method:"post",
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify(data)

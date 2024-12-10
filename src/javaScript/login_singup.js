@@ -116,7 +116,7 @@ function login_singup_form() {
   async function signupForm (event){
       event.preventDefault()
       try {
-          const response = await (await fetch('http://localhost:8085/api/v1/user/register',{
+          const response = await (await fetch('http://13.201.107.9/api/v1/user/register',{
               method:'post',
               headers: {'Content-Type' : 'application/json'},
               credentials:"include",
@@ -144,7 +144,7 @@ function login_singup_form() {
       event.preventDefault()
       
       try {
-          const response = await (await fetch('http://localhost:8085/api/v1/user/login',{
+          const response = await (await fetch('http://13.201.107.9/api/v1/user/login',{
               method:'post',
               headers: {'Content-Type' : 'application/json'},
               credentials:"include",
@@ -193,7 +193,7 @@ function login_singup_form() {
 const forgotPassword = async (email) => {
   
   try {
-    const response = await(await fetch('http://localhost:8085/api/v1/user/forgetpassword',{
+    const response = await(await fetch('http://13.201.107.9/api/v1/user/forgetpassword',{
       method:'post',
       headers:{'Content-Type':'application/json'},
       body:JSON.stringify({email:email})
@@ -209,7 +209,7 @@ const forgotPassword = async (email) => {
 }
 const resetPassword = async(data) =>{
   try {
-    const response = await(await fetch('http://localhost:8085/api/v1/user/resetpassword',{
+    const response = await(await fetch('http://13.201.107.9/api/v1/user/resetpassword',{
       method:'post',
       headers:{'Content-Type':"application/json"},
       body:JSON.stringify(data)
