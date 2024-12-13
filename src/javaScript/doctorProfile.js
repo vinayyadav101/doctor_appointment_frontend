@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
         if (response.code === 1) {
             document.getElementById("book-appointment-btn").addEventListener('click' , ()=>{
-                window.location.href = `https://vinayyadav101.github.io/doctor_appointment_frontend/public/appointmentForm.html?id=${response.data._id}&doctorName=${response.data.doctorName}&fee=${response.data.consultaionFee}&department=${response.data.specialty}`
+                window.location.href = `http://frontentv1.s3-website.ap-south-1.amazonaws.com/public/appointmentForm.html?id=${response.data._id}&doctorName=${response.data.doctorName}&fee=${response.data.consultaionFee}&department=${response.data.specialty}`
             })
             
         }

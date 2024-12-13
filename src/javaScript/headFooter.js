@@ -37,14 +37,14 @@ async function openPages(route){
 
 
     if (check !== 0) {
-        window.location = `https://vinayyadav101.github.io/doctor_appointment_frontend/public/${route}.html`
+        window.location = `http://frontentv1.s3-website.ap-south-1.amazonaws.com/public/${route}.html`
         return
     }
     showAlert("error" , "user is not login!")
     return;
 }
 
-window.location = `https://vinayyadav101.github.io/doctor_appointment_frontend/public/${route}.html`
+window.location = `http://frontentv1.s3-website.ap-south-1.amazonaws.com/public/${route}.html`
     
     
 }

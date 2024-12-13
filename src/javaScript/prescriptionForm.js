@@ -73,7 +73,7 @@ async function uploadPdfOnServer(pdfBlob){
                 if (response.code !== 0) {
                     loading.style.display = "none"
                     showAlert("success" , response.msg)
-                    document.getElementById("alert_button").addEventListener("click",()=>window.location.href = 'https://vinayyadav101.github.io/doctor_appointment_frontend/public/appointmentHistory.html')
+                    document.getElementById("alert_button").addEventListener("click",()=>window.location.href = 'http://frontentv1.s3-website.ap-south-1.amazonaws.com/public/appointmentHistory.html')
                     return;
                 }
 

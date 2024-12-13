@@ -110,7 +110,7 @@ function renderAppointments(appointments) {
                             aTag.removeAttribute('download')
                             aTag.textContent = "Add Pescription"
                                 if (appointment.status !== "cancel") {
-                                    aTag.href = `https://vinayyadav101.github.io/doctor_appointment_frontend/public/prescriptionForm.html?id=${appointment._id}&patientName=${appointment.patientName}`
+                                    aTag.href = `http://frontentv1.s3-website.ap-south-1.amazonaws.com/public/prescriptionForm.html?id=${appointment._id}&patientName=${appointment.patientName}`
                                 }else{
                                     aTag.style.pointerEvents = "none"
                                     aTag.style.cursor = "no-drop"
