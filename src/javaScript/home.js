@@ -42,7 +42,7 @@ const doctorListDiv = document.getElementById('seaarch_result');
         )
         profile.setAttribute(
             "onclick",
-            `window.location.href = "http://13.201.107.9/public/doctorProfile.html?id=${doctor._id}"`
+            `window.location.href = "http://frontentv1.s3-website.ap-south-1.amazonaws.com/public/doctorProfile.html?id=${doctor._id}"`
         )
         
         const doctorImage = document.createElement('img');
@@ -101,7 +101,7 @@ const topthreedoctors = (data)=>{
 
 const bookAppointment = (id , name , fee , department)=>{
     
-    window.location.href = `http://13.201.107.9/public/appointmentForm.html?id=${encodeURIComponent(id)}&doctorName=${name}&fee=${fee}&department=${department}`
+    window.location.href = `http://frontentv1.s3-website.ap-south-1.amazonaws.com/public/appointmentForm.html?id=${encodeURIComponent(id)}&doctorName=${name}&fee=${fee}&department=${department}`
     
 }
 
