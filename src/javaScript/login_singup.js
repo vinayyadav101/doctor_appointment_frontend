@@ -160,9 +160,11 @@ function login_singup_form() {
           }
           if (window.location.pathname !== "/public/adminPage.html") {
             
-                clearinputValue()
                 showAlert('success' , "Loging successfully")
-                checkCookie()
+                document.getElementById("alert_button").addEventListener("click",()=>{
+                  clearinputValue() 
+                  checkCookie()
+                })
           }else if(response.data.role === "admin"){
 
                   clearinputValue()
